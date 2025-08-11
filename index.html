@@ -1,20 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>pesquisa_op_2025_08</title>
-  <link rel="stylesheet" href="https://widget-v3.web.app/css/app.css">
+  <title>Pesquisa Centralizada</title>
+  <link href="https://widget-v3.web.app/css/app.css" rel="stylesheet" />
   <style>
-    /* Pequeno reset para evitar margens indesejadas */
-    html,body{height:100%;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif}
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    #widget-container {
+      background: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      width: 420px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
-  <!-- Widget: posição bottom-left -->
-  <div id="widget-root">
+
+  <div id="widget-container">
     <vue-widget
-      widget_position="bottom-left"
+      widget_position="center"
       widget_title="feedback"
       buttons="#91dfe3"
       width="400"
@@ -42,5 +58,6 @@
   </div>
 
   <script src="https://widget-v3.web.app/js/app.js"></script>
+
 </body>
 </html>
