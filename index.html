@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pesquisa Orientação Parental 2025</title>
-  <link href="https://widget-v3.web.app/css/app.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa</title>
+  <link href="https://widget-v3.web.app/css/app.css" rel="stylesheet">
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      background: #f5f7fa;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Montserrat', sans-serif;
+      background: transparent;
     }
-    #widget-container {
-      background: white;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      border-radius: 12px;
-      width: 420px;
-      padding: 20px;
-      box-sizing: border-box;
+    /* Remove fundo branco padrão */
+    html, body {
+      background-color: transparent !important;
     }
   </style>
 </head>
 <body>
 
-  <div id="widget-container">
-    <vue-widget
-      widget_position="center"
-      widget_title="feedback"
-      buttons="#91dfe3"
-      width="400"
-      height=""
-      text_buttons="#ffffff"
-      background="#164e74"
-      texts="#ffffff"
-      timeout="0"
-      width_metric="px"
-      survey_id="6899eb64293eba909995b57f"
-      close_button="true"
-      close_permanently="false"
-      response_background="#ffffff"
-      hidde_after_answer="false"
-      hidde_when_click_to_close="false"
-      response_font_color="#0a0a0a"
-      font_family="'Montserrat', sans-serif"
-      font_size="large"
-      text_props="{'bold':'false','italic':'false','underline':'false'}"
-      border_radius="0"
-      from='{"name": "", "email": "", "phone":""}'
-      is_to_post="true"
-      metadata='{}'
-    ></vue-widget>
-  </div>
+  <vue-widget 
+    widget_position="center" 
+    widget_title="feedback" 
+    buttons="#91dfe3" 
+    width="400" 
+    height="" 
+    text_buttons="#ffffff" 
+    background="#164e74" 
+    texts="#ffffff" 
+    timeout="0" 
+    width_metric="px" 
+    survey_id="6899eb64293eba909995b57f" 
+    close_button="false" 
+    close_permanently="false" 
+    response_background="transparent" 
+    hidde_after_answer="false" 
+    hidde_when_click_to_close="false" 
+    response_font_color="#0a0a0a" 
+    font_family="'Montserrat', sans-serif" 
+    font_size="large" 
+    text_props="{'bold':'false','italic':'false','underline':'false'}" 
+    border_radius="0" 
+    from='{"name": "", "email": "", "phone":""}' 
+    is_to_post="true" 
+    metadata='{}'
+  ></vue-widget>
 
   <script src="https://widget-v3.web.app/js/app.js"></script>
 
